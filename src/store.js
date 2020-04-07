@@ -28,10 +28,10 @@ function reducer(state = initialState, action) {
       return { ...state, category: payload };
 
     case UPDATE_AUTHOR_FIRST:
-      return { ...state, category: payload };
+      return { ...state, authorFirst: payload };
 
     case UPDATE_AUTHOR_LAST:
-      return { ...state, category: payload };
+      return { ...state, authorLast: payload };
 
     case ADD_INGREDIENT:
         const newIngredients = [...state.ingredients, payload];
